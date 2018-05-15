@@ -18,7 +18,6 @@ const css = `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
   }
     
   & .nav li {
@@ -28,7 +27,7 @@ const css = `
     height: 60px;
   }
   & .selected {
-    text-shadow:0 0 1px #d0021b, 0 0 1px #d0021b
+    font-weight: bold;
   }
   & a {
     text-decoration: none;
@@ -45,7 +44,7 @@ const NavBar = () => {
       <div className="nav-container">
         
         <img src={require('../images/DevinRasmussen.PNG')} alt="" />
-        <div>on Canopy open source</div>
+        <h3>on Canopy open source</h3>
         <ul className="nav">
           <li><NavLink activeClassName="selected" exact to="/">Home</NavLink></li>
           <li><NavLink activeClassName="selected" to="/kremling">Kremling</NavLink></li>

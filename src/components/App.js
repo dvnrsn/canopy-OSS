@@ -2,12 +2,8 @@ import React, { Component } from 'react'
 import {Route} from 'react-router-dom'
 import NavBar from './NavBar'
 import {Scoped} from 'kremling';
+import Home from './Home';
 
-const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
 
 const Kremling = () => {
   return (
@@ -28,6 +24,7 @@ const css = `
   & .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 50px;
   }
 `
 
@@ -35,8 +32,8 @@ class App extends Component {
   render() {
     return (
       <Scoped css={css}>
-        <NavBar />
         <div className="container">
+          <NavBar />
           <Route exact path="/" component={Home} />
           <Route path="/kremling" component={Kremling} />
           <Route path="/blog" component={Blog} />
