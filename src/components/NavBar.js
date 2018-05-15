@@ -21,10 +21,11 @@ const css = `
   }
     
   & .nav li {
-      margin-right: 30px;
+      margin-left: 30px;
     }
   & img {
     height: 60px;
+    margin-left: -20px;
   }
   & .selected {
     font-weight: bold;
