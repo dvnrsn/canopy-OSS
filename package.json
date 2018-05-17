@@ -2,7 +2,7 @@
   "name": "gh-pages-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dvnrsn.github.io/gh-pages-example/",
+  "homepage": "https://dvnrsn.github.io/canopy-OSS/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "kremling": "^0.6.1",
