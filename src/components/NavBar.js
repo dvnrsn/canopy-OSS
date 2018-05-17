@@ -47,8 +47,8 @@ const NavBar = () => {
         <img src={require('../images/DevinRasmussen.PNG')} alt="" />
         <h3>on Canopy open source</h3>
         <ul className="nav">
-          <li><NavLink activeClassName="selected" exact to="/">Home</NavLink></li>
-          <li><NavLink activeClassName="selected" to="/kremling">Kremling</NavLink></li>
+          <li><NavLink activeClassName="selected" exact to={process.env.PUBLIC_URL +"/"}>Home</NavLink></li>
+          <li><NavLink activeClassName="selected" to={process.env.PUBLIC_URL +"/kremling"}>Kremling</NavLink></li>
         </ul>
       </div>
     </Scoped>

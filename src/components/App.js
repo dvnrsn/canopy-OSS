@@ -23,8 +23,8 @@ class App extends Component {
       <Scoped css={css}>
         <div className="container">
           <NavBar />
-          <Route exact path="/" component={Home} />
-          <Route path="/kremling" component={Kremling} />
+          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+          <Route path={process.env.PUBLIC_URL + "/kremling"} component={Kremling} />
         </div>
       </Scoped>
     );
