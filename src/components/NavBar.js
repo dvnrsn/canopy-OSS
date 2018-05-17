@@ -49,7 +49,6 @@ const NavBar = () => {
         <ul className="nav">
           <li><NavLink activeClassName="selected" exact to="/">Home</NavLink></li>
           <li><NavLink activeClassName="selected" to="/kremling">Kremling</NavLink></li>
-          <li><NavLink activeClassName="selected" to="/blog">Blog</NavLink></li>
         </ul>
       </div>
     </Scoped>

@@ -3,18 +3,7 @@ import {Route} from 'react-router-dom'
 import NavBar from './NavBar'
 import {Scoped} from 'kremling';
 import Home from './Home';
-
-
-const Kremling = () => {
-  return (
-    <div>About</div>
-  )
-}
-const Blog = () => {
-  return (
-    <div>Blog</div>
-  )
-}
+import Kremling from './Kremling';
 
 const css = `
   & body {
@@ -36,7 +25,6 @@ class App extends Component {
           <NavBar />
           <Route exact path="/" component={Home} />
           <Route path="/kremling" component={Kremling} />
-          <Route path="/blog" component={Blog} />
         </div>
       </Scoped>
     );
